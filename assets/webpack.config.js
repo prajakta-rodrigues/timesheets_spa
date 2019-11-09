@@ -51,6 +51,7 @@ module.exports = (env, options) => ({
     new CopyWebpackPlugin([{ from: 'static/', to: '../' }]),
     new webpack.ProvidePlugin({
       $: 'jquery',
+      _: "underscore",
       jQuery: 'jquery',
       Popper: ['popper.js', 'default'],
     }),

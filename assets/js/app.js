@@ -10,6 +10,7 @@ import css from "../css/app.scss";
 // Import dependencies
 //
 import "phoenix_html";
+import store from "./store";
 
 // Import local files
 //
@@ -19,5 +20,5 @@ import init_page from './page';
 
 window.addEventListener("load", () => {
   let root = document.getElementById('root');
-  init_page(root);
+  init_page(root, store);
 });
