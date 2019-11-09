@@ -18,3 +18,15 @@ Ready to run in production? Please [check our deployment guides](http://www.phoe
   * Docs: https://hexdocs.pm/phoenix
   * Mailing list: http://groups.google.com/group/phoenix-talk
   * Source: https://github.com/phoenixframework/phoenix
+
+
+## Design Choices
+1. A user can edit their tasks till the request is approved.
+2. A user can delete or add tasks till the request is approved.
+3. A user can delete or edit request till the request is approved.
+4. Every user has a role either of worker or manager.
+5. Manager cannot raise requests only workers can.
+6. Managers can only approve requests of workers who are assigned to them.
+
+## Attribution
+  * https://github.com/NatTuck/lens
